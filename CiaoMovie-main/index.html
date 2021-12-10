@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelispedia</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="./manifest.json"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+</head>
+
+<body>
+  
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="img/istockphoto-1269936208-170667a.jpg" width="25" height="25" class="d-inline-block align-top" alt="">
+            Pelispedia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="random.html">Que ver</a>
+            </li>
+            <li class="nav-item">
+             
+            </li>
+          </ul>
+          
+          <form class="d-flex">
+            <input class="form-control" type="text" id="searchText" placeholder="Introduzca titulo">
+            <button class="btn btn-success my-3 my-sm-0" type="button" value="Buscar" onclick="eventoBtn()"> Buscar </button>
+            </form>
+        </div>
+      </nav>
+
+  <div class="cards-container">
+    <p id="alert" class="alert"></p>
+    <h2 class="text-center text-light mb-4, text-white  bg-success">Resultados Similares</h2>
+    <div class="container-fluid">
+      <div class="row new-row mt-1 mb-1"></div>
+      <div class="row default-row mt-1 mb-1" id="row-1"></div>
+      <div class="row default-row mt-1 mb-1" id="row-2"></div>
+    </div>
+  </div>
+    <div class="container">
+
+  
+    <div class="row row-cols-1 row-cols-md-3 " id="answer">
+    </div>
+</div>
+    <div class="container-fluid">
+        <!-- <br> -->
+        <nav aria-label="...">
+            <ul class="pager">
+                <li class="previous" id="back"><a onclick="pag(-1)">&larr; Anterior</a></li>
+                <li class="next" id=""><a onclick="pag(1)">Siguiente &rarr;</a></li>
+            </ul>
+        </nav>
+        <div class="enabled" style="display: flex; align-items: center; justify-content: center;" id="numPg">
+            <li class="previous">
+                <a class="page-link" aria-disabled="true"> 1</a>
+            </li>
+        </div>
+        <div class="enabled" style="display: flex; align-items: center; justify-content: center;" id="numPg">
+
+      </div>
+    </div>
+    <div class="modal fade " id="dat">
+        <div class="modal-dialog ">
+            <div class="modal-content md">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="./js/funciones.js"></script>
+    <script type="text/javascript" src="./js/register-sw.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
+
+</body>
+
+</html>
